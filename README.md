@@ -18,7 +18,7 @@
 
 4. <strong>Shadcn:</strong>
     - Shadcn은 그림자 및 빛 효과를 생성하기 위한 CSS 클래스 유틸리티 라이브러리
-    - radix ui 기반 컴포넌트 라이브러리 제공 + tailwind css 지
+    - radix ui 기반 컴포넌트 라이브러리 제공 + tailwind css 지원
     - https://www.radix-ui.com/primitives/docs/overview/introduction
 
 5. <strong>React-Spinners, React-Icons:</strong>
