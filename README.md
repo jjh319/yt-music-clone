@@ -25,3 +25,8 @@
     - React-Spinners는 리액트 애플리케이션에서 로딩 스피너
     - React-Icons는 다양한 아이콘
     - https://ui.shadcn.com/
+
+<br>
+<h2>Vercel 배포 및 CI/CD 완료</h2>
+
+https://yt-music-clone-pi.vercel.app/
