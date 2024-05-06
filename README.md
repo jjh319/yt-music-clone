@@ -1,32 +1,36 @@
-<h2>라이브러리 소개</h2>
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-1. <strong>Next.js 14:</strong>
+## Getting Started
 
-    - Next.js는 React 기반의 웹 프레임워크로, SSR(Server-Side Rendering) 및 정적 사이트 생성을 지원
-    - https://nextjs.org/
-      
-2. <strong>Tailwind CSS:</strong>
-    - Tailwind CSS는 클래스 기반의 유틸리티 퍼스트(CSS Utility-First) 프레임워크
-    - HTML 클래스에 직접 스타일을 적용하여 디자인을 구축
-    - https://tailwindcss.com/docs/installation
-      
-3. <strong>Radix UI:</strong>
-    - Radix UI는 저수준(UI primitives) 컴포넌트를 제공하는 라이브러리
-    - 컴포넌트를 많이 분리해두어서 커스터마이징이 거의 다 된다.
-    - tailwind css 지원
-    - https://www.radix-ui.com/primitives/docs/overview/introduction
+First, run the development server:
 
-4. <strong>Shadcn:</strong>
-    - Shadcn은 그림자 및 빛 효과를 생성하기 위한 CSS 클래스 유틸리티 라이브러리
-    - radix ui 기반 컴포넌트 라이브러리 제공 + tailwind css 지원
-    - https://www.radix-ui.com/primitives/docs/overview/introduction
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-5. <strong>React-Spinners, React-Icons:</strong>
-    - React-Spinners는 리액트 애플리케이션에서 로딩 스피너
-    - React-Icons는 다양한 아이콘
-    - https://ui.shadcn.com/
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-<br>
-<h2>Vercel 배포 및 CI/CD 완료</h2>
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-https://yt-music-clone-pi.vercel.app/
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
