@@ -1,6 +1,8 @@
+import { sleep } from '@/lib/utils';
+import { error } from 'console';
 import React from 'react';
 
-const page = () => {
+const page = async () => {
     return <div>homepage</div>;
 };
 
