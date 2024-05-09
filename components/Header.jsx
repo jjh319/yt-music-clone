@@ -18,6 +18,7 @@ import {
 import Logo from './elements/Logo';
 import Navigator from './elements/Navigator';
 import { cn } from '@/lib/utils';
+import useUIState from '@/hooks/useUIState';
 
 const HeaderDrawer = ({ children }) => {
    const [isOpen, setIsOpen] = useState(false);
@@ -45,6 +46,8 @@ const HeaderDrawer = ({ children }) => {
 };
 
 const Header = ({ children }) => {
+   const { headerImageSrc } = useUIState();
+
    const [isScrolled, setIsScrolled] = useState(false);
    const headRef = useRef(); // header 부분이 지금 scroll이 되고 있는지 확인
 
@@ -69,17 +72,16 @@ const Header = ({ children }) => {
                   alt="mediaItem"
                   className="object-cover"
                   fill
-                  src="https://images.unsplash.com/photo-1476673160081-cf065607f449?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={
+                     headerImageSrc ||
+                     'https://images.unsplash.com/photo-1476673160081-cf065607f449?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  }
                />
                <div className="absolute h-[500px] top-0 bg-black opacity-40 w-full "></div>
                <div className="absolute h-[500px] top-0 bg-gradient-to-t from-black  w-full "></div>
             </div>
          </section>
-         <section
-            className={cn(
-               'sticky top-0 left-0 z-10',
-               isScrolled && 'bg-black',
-            )}>
+         <section className={cn('sticky top-0 left-0 z-10', isScrolled && 'bg-black')}>
             <PagePadding>
                <div className="h-[64px] flex flex-row justify-between items-center">
                   <article className="hidden lg:flex flex-row items-center h-[42px] min-w-[480px] bg-[rgba(0,0,0,0.14)] rounded-2xl px-[16px] gap-[16px] border border-neutral-500">
