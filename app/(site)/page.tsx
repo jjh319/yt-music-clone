@@ -30,6 +30,11 @@ const page = async () => {
                title="다시 듣기"
                subTitle="지훈"
             />
+
+            <div className="mt-20"></div>
+            {/* carousel */}
+            <PlayListCarousel playlistArray={[...dummyPlaylistArray1]} title="커뮤니티 제공" />
+
             <div className="mt-20"></div>
             {/* carousel */}
             <PlayListCarousel
@@ -37,13 +42,9 @@ const page = async () => {
                title="케이시 - Full Bloom"
                subTitle="새로운 앨범"
             />
-
             <div className="mt-20"></div>
             {/* carousel */}
-            <PlayListCarousel playlistArray={[...dummyPlaylistArray3]} title="커뮤니티 제공" />
-            <div className="mt-20"></div>
-            {/* carousel */}
-            <PlayListCarousel playlistArray={[...dummyPlaylistArray4]} title="커버 및 리믹스" />
+            <PlayListCarousel playlistArray={[...dummyPlaylistArray1]} title="커버 및 리믹스" />
          </div>
       </PagePadding>
    );
