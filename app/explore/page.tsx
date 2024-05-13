@@ -16,9 +16,12 @@ const page = async () => {
          <div className="mt-4"></div>
          <Category />
          <div className="mt-20"></div>
-         <PlayListCarousel playlistArray={playlistArray} title="새 앨범 및 싱글" subTitle="새로운 앨범" />
+         <PlayListCarousel playlistArray={playlistArray} title="새 앨범 및 싱글" />
          <div className="mt-20"></div>
-         <SongListCarousel songListTop10={songListTop10} title="새 앨범 및 싱글" subTitle="새로운 앨범" />
+         <SongListCarousel songListTop10={songListTop10} title="인기곡" />
+         <div className="mt-20"></div>
+         <div className="mt-20"></div>
+         <div className="mt-20"></div>
       </PagePadding>
    );
 };

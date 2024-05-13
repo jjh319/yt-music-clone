@@ -1,12 +1,14 @@
 import React from 'react';
-import { FiMusic, FiBarChart, FiSmile } from 'react-icons/fi';
+import { FiMusic } from 'react-icons/fi';
+import { FiBarChart } from 'react-icons/fi';
+import { FiSmile } from 'react-icons/fi';
 
 const CategoryMenu = ({ icon, label }) => {
    return (
       <div
-         className="w-full h-[56px] py-4 px-[24px] flex flex-row gap-4 items-center bg-neutral-700 text-[20px] cursor-pointer rounded-sm
-            hover:bg-neutral-800 transition
-      ">
+         className="w-full h-[56px] py-4 px-[24px] flex flex-row gap-4 items-center
+    bg-neutral-700 text-[20px] cursor-pointer rounded-sm hover:bg-neutral-800 transition
+    ">
          {icon}
          {label}
       </div>
