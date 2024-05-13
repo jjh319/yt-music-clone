@@ -24,7 +24,15 @@ const PlayListCard = ({ playlist }) => {
    return (
       <article className="h-[240px] cursor-pointer group">
          <section onClick={onClickCard} className="relative h-[136px]">
-            <Image src={imgSrc} fill={true} alt="thumbnail" className="object-cover" />
+            <Image
+               src={
+                  imgSrc ||
+                  'https://images.unsplash.com/photo-1476673160081-cf065607f449?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+               }
+               fill={true}
+               alt="thumbnail"
+               className="object-cover rounded-md"
+            />
             <div className="hidden relative group-hover:block bg-gradient-to-b from-[rgba(0,0,0,0.7)] top-0 w-full h-[136px]">
                <div className="absolute top-2 right-4">
                   <IconButton icon={<MdMoreVert size={20} />} />
