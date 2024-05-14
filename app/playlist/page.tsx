@@ -3,6 +3,8 @@ import { getRandomElementFromArray } from '@/lib/utils';
 import { permanentRedirect } from 'next/navigation';
 import React from 'react';
 import HeaderBgChanger from '@/components/HeaderBgChanger';
+import PagePadding from '@/components/PagePadding';
+import PlayListHead from '@/components/PlayListHead';
 
 interface PlaylistPageProps {
    searchParams: {
@@ -20,10 +22,11 @@ const page = async (props: PlaylistPageProps) => {
    const imageSrc = getRandomElementFromArray(playList.songList)?.imageSrc;
 
    return (
-      <div>
+      <PagePadding>
          <HeaderBgChanger imageSrc={imageSrc} />
-         playlist {props.searchParams.list}{' '}
-      </div>
+         <div className="mt-12"></div>
+         <PlayListHead playList={playList} />
+      </PagePadding>
    );
 };
 
