@@ -9,7 +9,7 @@ const HeaderBgChanger = ({ imageSrc }) => {
       if (imageSrc) {
          setHeaderImageSrc(imageSrc);
       }
-   }, [imageSrc]);
+   }, [imageSrc, setHeaderImageSrc]);
 
    return <></>;
 };
