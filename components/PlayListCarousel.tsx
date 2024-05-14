@@ -4,7 +4,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import PlayListCard from './PlayListCard';
 
 interface PlayListCarouselProps {
-   title: string;
+   title?: string;
    subTitle?: string;
    Thumbnail?: React.ReactNode; // React 컴포넌트 자체를 넘길 수 있게
    playlistArray?: Playlist[];
