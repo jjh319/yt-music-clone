@@ -1,12 +1,15 @@
 'use client';
+import usePlayerState from '@/hooks/usePlayerState';
 import React from 'react';
 import { IoMdPlayCircle } from 'react-icons/io';
 
 const PlaylistNav = ({ playlist }) => {
+   const { addSongList } = usePlayerState();
    const { id, owner, playlistName, songList } = playlist;
 
    const onClickPlay = () => {
       // TODO play Music
+      addSongList(songList);
    };
 
    return (
@@ -17,9 +20,7 @@ const PlaylistNav = ({ playlist }) => {
          </div>
 
          <div>
-            <div
-               onClick={onClickPlay}
-               className="hidden group-hover:block cursor-pointer">
+            <div onClick={onClickPlay} className="hidden group-hover:block cursor-pointer">
                <IoMdPlayCircle size={30} />
             </div>
          </div>
