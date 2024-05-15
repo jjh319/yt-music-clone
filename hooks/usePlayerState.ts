@@ -9,3 +9,5 @@ const usePlayerState = create<PlayerState>(set => ({
    isVisiblePlayer: false,
    setIsVisiblePlayer: (isVisiblePlayer: boolean) => set({ isVisiblePlayer }),
 }));
+
+export default usePlayerState;
